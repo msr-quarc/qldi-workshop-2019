@@ -3,7 +3,7 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <PlatformTarget>x64</PlatformTarget>
     <IsPackable>false</IsPackable>
-    <RootNamespace>Quantum.Kata.GroversAlgorithm</RootNamespace>
+    <RootNamespace>Quantum.Kata.BasicGates</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
