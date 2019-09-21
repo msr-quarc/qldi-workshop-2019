@@ -15,19 +15,8 @@ RUN chown -R ${USER} ${HOME} && \
 USER ${USER}
 
 # Pre-exec notebooks to improve first-use start time
-RUN ${HOME}/scripts/prebuild-kata.sh BasicGates
-RUN ${HOME}/scripts/prebuild-kata.sh CHSHGame
-RUN ${HOME}/scripts/prebuild-kata.sh DeutschJozsaAlgorithm
-RUN ${HOME}/scripts/prebuild-kata.sh GHZGame
-RUN ${HOME}/scripts/prebuild-kata.sh GraphColoring
+## TODO RUN ${HOME}/scripts/prebuild-kata.sh 0.Intro
+RUN ${HOME}/scripts/prebuild-kata.sh 1.Teleport Teleportation.ipynb
+RUN ${HOME}/scripts/prebuild-kata.sh DeutschJozsaAlgorithm DeutschJozsaAlgorithmTutorial.ipynb
 RUN ${HOME}/scripts/prebuild-kata.sh GroversAlgorithm
-RUN ${HOME}/scripts/prebuild-kata.sh JointMeasurements
-RUN ${HOME}/scripts/prebuild-kata.sh MagicSquareGame
-RUN ${HOME}/scripts/prebuild-kata.sh Measurements
-RUN ${HOME}/scripts/prebuild-kata.sh QEC_BitFlipCode
 RUN ${HOME}/scripts/prebuild-kata.sh SolveSATWithGrover
-RUN ${HOME}/scripts/prebuild-kata.sh SuperdenseCoding
-RUN ${HOME}/scripts/prebuild-kata.sh Superposition
-RUN ${HOME}/scripts/prebuild-kata.sh Teleportation
-RUN ${HOME}/scripts/prebuild-kata.sh UnitaryPatterns
-RUN ${HOME}/scripts/prebuild-kata.sh tutorials/DeutschJozsaAlgorithm DeutschJozsaAlgorithmTutorial.ipynb
