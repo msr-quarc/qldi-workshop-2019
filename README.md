@@ -32,12 +32,6 @@ Some other exercises are taken from [Microsoft's Quantum GitHub repository](http
   Provides a couple of samples on how to incorporate Q# programs into Python scripts.
 
 
-
-# Contributing <a name="contributing" /> #
-
-This project welcomes contributions and suggestions.  For details, see [How Can I Contribute?](.github/CONTRIBUTING.md)
-
-
 # Code of Conduct <a name="code-of-conduct" /> #
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).

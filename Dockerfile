@@ -1,7 +1,7 @@
 # We use the iqsharp-base image, as that includes
 # the .NET Core SDK, IQ#, and Jupyter Notebook already
 # installed for us.
-FROM mcr.microsoft.com/quantum/iqsharp-base:0.8.1907.1701
+FROM mcr.microsoft.com/quantum/iqsharp-base:0.9.1908.2906
 
 # Add metadata indicating that this image is used for the katas.
 ENV IQSHARP_HOSTING_ENV=QLDI_2019_DOCKERFILE
@@ -21,5 +21,10 @@ RUN ${HOME}/scripts/prebuild-kata.sh 2.DeutschJozsaAlgorithm DeutschJozsaAlgorit
 RUN ${HOME}/scripts/prebuild-kata.sh 3.Teleport Teleportation.ipynb
 RUN ${HOME}/scripts/prebuild-kata.sh 4.GroverSearch GroversAlgorithm.ipynb
 RUN ${HOME}/scripts/prebuild-kata.sh 5.SATSolver SolveSATWithGrover.ipynb
-
 RUN dotnet build 6.PhaseEstimation/
+RUN ${HOME}/scripts/prebuild-kata.sh 7.Python tomography-sample.ipynb
+
+# Pre-build chemistry simulation:
+WORKDIR ${HOME}/7.Python
+RUN python chemistry_sample.py
+
