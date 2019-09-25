@@ -21,7 +21,7 @@ RUN ${HOME}/scripts/prebuild-kata.sh 2.DeutschJozsaAlgorithm DeutschJozsaAlgorit
 RUN ${HOME}/scripts/prebuild-kata.sh 3.Teleport Teleportation.ipynb
 RUN ${HOME}/scripts/prebuild-kata.sh 4.GroverSearch GroversAlgorithm.ipynb
 RUN ${HOME}/scripts/prebuild-kata.sh 5.SATSolver SolveSATWithGrover.ipynb
-RUN dotnet build 6.PhaseEstimation/
+RUN ${HOME}/scripts/prebuild-kata.sh 6.PhaseEstimation PhaseEstimation.ipynb
 RUN ${HOME}/scripts/prebuild-kata.sh 7.Python tomography-sample.ipynb
 
 # Pre-build chemistry simulation:
