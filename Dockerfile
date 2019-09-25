@@ -14,7 +14,7 @@ RUN chown -R ${USER} ${HOME} && \
     chmod +x ${HOME}/scripts/*.sh
 USER ${USER}
 
-RUN pip install qinfer duecredit mpltools matplotlib qutip
+RUN pip install qinfer duecredit mpltools matplotlib
 
 # Pre-exec notebooks to improve first-use start time
 RUN ${HOME}/scripts/prebuild-kata.sh 0.Intro Intro.ipynb
