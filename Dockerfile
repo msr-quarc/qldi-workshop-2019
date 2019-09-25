@@ -28,3 +28,4 @@ RUN ${HOME}/scripts/prebuild-kata.sh 7.Python tomography-sample.ipynb
 WORKDIR ${HOME}/7.Python
 RUN python chemistry_sample.py
 
+RUN pip install qinfer duecredit mpltools matplotlib qutip
