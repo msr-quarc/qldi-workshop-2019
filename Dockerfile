@@ -14,6 +14,8 @@ RUN chown -R ${USER} ${HOME} && \
     chmod +x ${HOME}/scripts/*.sh
 USER ${USER}
 
+RUN pip install qinfer duecredit mpltools matplotlib qutip
+
 # Pre-exec notebooks to improve first-use start time
 RUN ${HOME}/scripts/prebuild-kata.sh 0.Intro Intro.ipynb
 RUN ${HOME}/scripts/prebuild-kata.sh 1.BasicGates BasicGates.ipynb
@@ -28,4 +30,3 @@ RUN ${HOME}/scripts/prebuild-kata.sh 7.Python tomography-sample.ipynb
 WORKDIR ${HOME}/7.Python
 RUN python chemistry_sample.py
 
-RUN pip install qinfer duecredit mpltools matplotlib qutip
