@@ -13,23 +13,30 @@ Some other exercises are taken from [Microsoft's Quantum GitHub repository](http
 ## List of Exercises ##
 
 
-* **[Introduction](./0.Intro/)**.
+* **[Introduction](./0.Intro/Intro.ipynb)**.
   This Jupyter Notebook uses the Q# Jupyter kernel to introduce the core elements of the Q# language.
-* **[Basic quantum computing gates](./1.BasicGates/)**.
+* **[Basic quantum computing gates](./1.BasicGates/BasicGates.ipynb)**.
   This kata focuses on main single-qubit and multi-qubit gates used in quantum computing. 
-* **[Deutsch–Jozsa algorithm](./2.DeutschJozsaAlgorithm/)**.
+* **[Deutsch–Jozsa algorithm](./2.DeutschJozsaAlgorithm/DeutschJozsaAlgorithmTutorial.ipynb)**.
   This tutorial teaches you to implement classical functions and equivalent quantum oracles, 
   discusses the classical solution to the Deutsch–Jozsa problem, and introduces the Deutsch and Deutsch–Jozsa algorithms.
-* **[Teleportation](./3.Teleport/)**.
+* **[Teleportation](./3.Teleport/Teleportation.ipynb)**.
   This kata walks you through the standard teleportation protocol and several variations.
-* **[Grover's algorithm](./4.GroverSearch/)**.
+* **[Grover's algorithm](./4.GroverSearch/GroversAlgorithm.ipynb)**.
   This kata introduces Grover's search algorithm and writing quantum oracles to be used with it.
-* **[Solving SAT problems using Grover's algorithm](./5.SATSolver/)**.
+* **[Solving SAT problems using Grover's algorithm](./5.SATSolver/SolveSATWithGrover.ipynb)**.
   This kata continues the exploration of Grover's search algorithm, using SAT problems as an example. It covers implementing quantum oracles based on the problem description instead of a hard-coded answer and using Grover's algorithm to solve problems with unknown number of solutions.
-* **[Phase estimation](./6.PhaseEstimation/)**.
+* **[Phase estimation](./6.PhaseEstimation/PhaseEstimation.ipynb)**.
   This kata covers phase estimation algorithms.
-* **[Python Interop](./7.Python/)**.
+* **[Python Interop](./7.Chemistry/)**.
+  Shows how to perform a chemistry simulation of H2 using the local quantum simulator and
+  display the results graphically using Electron.
+* **[Numerics Library](./8.Numerics/)**.
+  Provides a samples on how to incorporate Q# programs into a C# classical host.
+  In particular, it shows how to leverage Q# numerics library to create your own ModAdder.
+* **[Python Interop](./9.Python/)**.
   Provides a couple of samples on how to incorporate Q# programs into Python scripts.
+  The samples show the integration from both, a Python script and a Python Jupyter notebook.
 
 
 # Code of Conduct <a name="code-of-conduct" /> #
